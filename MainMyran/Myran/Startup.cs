@@ -25,10 +25,9 @@ namespace Myran
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseStatusCodePages();
+            app.UseStaticFiles();
+            app.UseDirectoryBrowser();
         }
     }
 }
