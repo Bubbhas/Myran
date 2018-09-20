@@ -1,0 +1,83 @@
+﻿<!--KROPPEN I MITTEN MED TEXT-->
+<div class="container">
+    <div class="text-fluid">
+        <div class="col-sm-8 text-left">
+            <h1>Om oss</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <hr>
+            <h3>Vill du göra skillnad?</h3>
+            <p>Lorem ipsum orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</p>
+        </div>
+
+        <!-------------------------------------------------------------->
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <div class="well well-sm">
+                    <form class="form-horizontal" action="" method="post">
+                        <fieldset>
+                            <legend class="text-center">Contact us</legend>
+
+                            <!-- Name input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Name</label>
+                                <div class="col-md-9">
+                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                                <div class="col-md-9">
+                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Message body -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Your message</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!-------------------------------------------------------------->
+
+
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+                        <!-- Identify your business so that you can collect the payments. -->
+                        <input type="hidden" name="business"
+                               value="donations@kcparkfriends.org">
+
+                        <!-- Specify a Donate button. -->
+                        <input type="hidden" name="cmd" value="_donations">
+
+                        <!-- Specify details about the contribution -->
+                        <input type="hidden" name="item_name" value="Friends of the Park">
+                        <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+                        <input type="hidden" name="currency_code" value="USD">
+
+                        <!-- Display the payment button. -->
+                        <input type="image" name="submit"
+                               src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                               alt="Donate">
+                        <img alt="" width="1" height="1"
+                             src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
