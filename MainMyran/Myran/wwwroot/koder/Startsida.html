@@ -26,7 +26,6 @@
 
     <div class="videontext">
         <video autoplay="autoplay" muted="muted" loop="loop" preload="none" src="../koder/bilder/antVideo.mp4"></video>
-        <hgroup id="hgroup"><h1>Explore</h1></hgroup>
     </div>
 
     <div class="album py-5 bg-light">
@@ -73,7 +72,6 @@
                                     <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ChangePage()">Gå dit</button>
 
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -132,7 +130,7 @@
         left: 50%;
         -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
-        top: 200px;
+        bottom: 10px;
     }
 
     .videontext {
@@ -146,6 +144,7 @@
     video {
         position: absolute;
         width: 100%;
+        margin: -400px 0 0 0;
         /*object-fit: contain;*/
     }
 
