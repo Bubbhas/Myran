@@ -19,10 +19,91 @@
     </header>
 
     <div class="videontext">
-        <video autoplay="autoplay" muted="muted" loop="loop" preload="none" src="https://asset-manager.bbcchannels.com/v/2f93d.320p.mp4"></video>
+        <video autoplay="autoplay" muted="muted" loop="loop" preload="none" src="../koder/bilder/antVideo.mp4"></video>
         <hgroup id="hgroup"><h1>Explore</h1></hgroup>
     </div>
-    
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="bilder/myra2.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text"><b>Om oss</b><br /> Stöd oss i arbetet med att hjälpa myrorna</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ChangePageToOmOss()">Gå dit</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="bilder/Jord.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text"><b>Myrspelet</b><br /> Lär dig om myror samtidigt som du har kul</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ChangePage()">Gå dit</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="bilder/närbild.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text"><b>Myrspelet</b><br />Du har säkert tråkigt så spela spelet igen</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ChangePage()">Gå dit</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Myrorna tar över <span class="text-muted">Tro det eller ej.</span></h2>
+                    <p class="lead"> commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 250px;" src="bilder/mångaMyror2.jpg" data-holder-rendered="true">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Myrorna samarbetar superbra<span class="text-muted"> Kolla på bilden bara</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 250px;" src="bilder/Teamwork.jpg" data-holder-rendered="true">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Här kommer nästa del-->
+
 
 
 
@@ -35,7 +116,14 @@
 
 
 </html>
-
+<script>
+   
+    function ChangePage() {
+        window.location = 'https://localhost:44312/koder/myrKul.html';
+    } function ChangePageToOmOss() {
+        window.location = 'https://localhost:44312/koder/OmOss.html';
+    }
+</script>
 <style>
     #hgroup {
         position: absolute;
@@ -66,11 +154,11 @@
     }*/
 
     /* Set black background color, white text and some padding */
-    #footer {
+    /*#footer {
         background-color: black;
         color: white;
         padding: 15px;
         display: block;
-    }
+    }*/
 </style>
 <script src="Header&Footer.js"></script>
