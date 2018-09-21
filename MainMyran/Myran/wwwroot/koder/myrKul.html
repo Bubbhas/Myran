@@ -10,24 +10,289 @@
     <title>myrKul</title>
 </head>
 <body>
-    <h2>Vad vet du om myror?</h2>
+    <header>
+        <div id="header">            
+        </div>
+    </header>
+   <h2> Vad vet du om myror?</h2>
 
-    
-    <div id="question1" class="list-group">
-        <a class="list-group-item list-group-item-action" href="#list-item-1">1</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">X</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">2</a>        
-    </div>
-    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-        <h4 id="list-item-1">1</h4>
-        <p>...</p>
-        <h4 id="list-item-2">X</h4>
-        <p>...</p>
-        <h4 id="list-item-3">2</h4>
-        <p>...</p>        
+    <div>
+        <img src="bilder2/Myror.jpg " style="width:25%">
     </div>
 
+    <div style="overflow:auto">
+        <button id="button1" type="button" class="btn btn-dark">Fråga 1</button>
+        <button id="button2" type="button" class="btn btn-light">Fråga 2</button>
+        <button id="button4" type="button" class="btn btn-info">Fråga 3</button>
+        <button id="button3" type="button" class="btn btn-warning">Fråga 4</button>
+        <button id="button5" type="button" class="btn btn-danger">Fråga 5</button>
 
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div id="question1">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="bilder2/roligaMyror.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+
+                        <p>I de flesta av myrornas samhällen existerar tre grupper av individer. Två av dessa är honon (drottningar) och arbetare. Vilken är den tredje individgruppen?</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="rightAnswer()">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Hannan
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Chefsmyror
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Könlösa individer
+                            </label>
+                        </div>
+
+                        </p>
+                        <!--<button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>-->
+                        <!--gör aktiv knapp som stänger ruta-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 offset-md-4">
+
+            <div id="question2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="bilder/mångaMyror2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+
+                        <p>Vilket är det huvudsakliga kommunikationsmedlet mellan myror på visst avstånd?</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Genom pip och höga ljud
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="rightAnswer()">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Genom doftämnen
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Genom tentaklernas rörelser
+                            </label>
+                        </div>
+
+                        </p>
+                        <!--<button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>-->
+                        <!--gör aktiv knapp som stänger ruta-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-3">
+
+            <div id="question3">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="bilder/insects-anthill.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+
+                        <p>Vad händer om du lägger en bit rått kött på en skogsmyrstack?</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Förmodligen kommer myrorna att förlora köttet till fåglar
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="rightAnswer()">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Inom några timmar har myrorna öppnat stacken, gömt köttet och förslutit stacken
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Myror äter inte kött, varför de kommer att bära bort det från stacken
+                            </label>
+                        </div>
+
+                        </p>
+                        <!--<button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>-->
+                        <!--gör aktiv knapp som stänger ruta-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 offset-md-3">
+
+            <div id="question4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="bilder2/bits.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+
+                        <p>Vad kallas ämnet som skogsmyror utsöndrar för att freda sig och sina samhällen mot tilltänkta fiender (bilden)?</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Salicylsyra
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Urin
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="rightAnswer()">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Myrsyra  (metansyra)
+                            </label>
+                        </div>
+
+                        </p>
+                        <!--<button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>-->
+                        <!--gör aktiv knapp som stänger ruta-->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <div id="question5">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="bilder2/myrorJobbar.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+
+                        <p>Hur mycket kan en myra bära?</p>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Upp till fem gånger sin egen vikt
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="wrongAnswer()">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Ett par stycken andra myror, bara de som är snälla förstås
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="rightAnswer()">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Upp till  hundra gånger sin egen vikt
+                            </label>
+                        </div>
+
+                        </p>
+                        <!--<button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>-->
+                        <!--gör aktiv knapp som stänger ruta-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        let button1 = document.getElementById("button1");
+        let question1 = document.getElementById("question1");
+        question1.style.display = "none"
+
+        button1.addEventListener("click", () => {
+            question1.style.display = "block"
+
+        });
+
+        let button2 = document.getElementById("button2");
+        let question2 = document.getElementById("question2");
+        question2.style.display = "none"
+
+        button2.addEventListener("click", () => {
+            question2.style.display = "block"
+
+        });
+
+        let button3 = document.getElementById("button3");
+        let question3 = document.getElementById("question3");
+        question3.style.display = "none"
+
+        button3.addEventListener("click", () => {
+            question3.style.display = "block"
+
+        });
+
+        let button4 = document.getElementById("button4");
+        let question4 = document.getElementById("question4");
+        question4.style.display = "none"
+
+        button4.addEventListener("click", () => {
+            question4.style.display = "block"
+
+        });
+
+        let button5 = document.getElementById("button5");
+        let question5 = document.getElementById("question5");
+        question5.style.display = "none"
+
+        button5.addEventListener("click", () => {
+            question5.style.display = "block"
+
+        });
+
+        function rightAnswer() {
+            alert("RÄTT!");
+        }
+
+        function wrongAnswer() {
+            alert("FEL!");
+
+        }
+    </script>
 
 </body>
 </html>
+<script src="Header&Footer.js"></script>
